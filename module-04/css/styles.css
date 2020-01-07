@@ -1,0 +1,245 @@
+/*html*/
+html{box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+
+/*body*/
+body {
+    font-family: "Open Sans", "Roboto", sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    line-height: 0px;}
+
+/*header*/
+.block-header {
+    margin-top: 38px;
+    margin-bottom: 98px;}
+
+/*logo*/
+.logo {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 30px;
+    line-height: 32px;}
+
+.logo::first-letter {
+    font-weight: 900;
+    color: rgb(26, 188, 156);}
+
+/*navigation*/
+.menu {
+    float: right;
+    width: 466px;
+    font-size: 14px;
+    list-style: none;
+    margin-top: 11px;
+    margin-right: 30px;
+    padding: 0px;}
+
+.menu li {float: left;}
+
+.menu li:not(:last-child){margin-right: 30px;}
+
+.menu a {
+    display: block;
+    color: rgb(15, 1, 1);
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 11px;
+}
+
+/*.site-navigation a:first-child {color: rgb(26, 188, 156);}*/
+
+.menu a:hover {color: #e84545;}
+.menu a:focus {color: #e84545;}
+
+.menu span {color: #03a9f4;}
+.menu span:hover {color: #e84545;}
+.menu span:focus {color: #e84545;}
+
+/*main products*/
+.products {
+    margin-bottom: 98px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 42px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2::after {
+    content: '';
+    display:block;
+    background-color: rgb(26, 188, 156);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 92px;
+    width: 164px;
+    height: 7px;
+}
+
+h3::after {
+    content: '';
+    display:block;
+    background-color: rgb(26, 188, 156);
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 136px;
+    height: 3px;
+}
+
+.products-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.products-list li {
+    float: left;
+    width: 255px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.products-list li:nth-child(6n) .products-list-name {background-color:rgb(26, 188, 156);}
+.products-list li:nth-child(6n) .products-list-price {background-color:rgb(127, 217, 199);}
+
+.products-list li:first-child{margin-left: 30px;}
+.products-list li:nth-child(5n){margin-left: 30px;}
+.products-list li:nth-last-child(-n+4) {margin-bottom: 0;}
+
+.products-list li:hover .products-list-name {background-color: rgb(11, 85, 27);}
+.products-list li:hover .products-list-price {background-color: rgb(11, 85, 27);}
+
+.products-list-img {
+    margin-left: 0px;
+    margin-bottom: 0px;}
+
+.products-list-name {
+    float: left;
+    width: 201px;
+    height: 40px;
+    line-height: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Roboto";
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-top: 14px;
+    padding-left: 14px;
+    margin: 0 auto;
+}
+
+.products-list-price {
+    float: right;
+    font-size: 18px;
+    line-height: 17px;
+    font-family: "Roboto";
+    width: 54px;
+    height: 40px;
+    background-color: rgb(140, 140, 140);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 14px;
+    margin: 0px;
+}
+
+
+/*main news*/
+.news {
+    list-style: none;
+    margin-bottom: 82px;
+    padding: 0;
+    font-size: 0;
+}
+
+.news li{
+    float: left;
+    width: 350px;
+    margin-right: 30px;
+}
+
+.news li:first-child{margin-left: 30px;}
+
+.news-img {margin-bottom: 14px;}
+
+.news-about {
+    font-size: 18px;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    color: rgb(85, 82, 82);
+    line-height: 26px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.news-text {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    color: rgb(85, 82, 82);
+    line-height: 20px;
+}
+
+.read {
+    display: block;
+    border-radius: 3px;
+    background-color: rgb(78, 198, 171);
+    width: 159px;
+    height: 51px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+
+
+  
+
+
+
+
+
+
+
