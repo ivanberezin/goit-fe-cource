@@ -113,11 +113,11 @@ a {text-decoration: none;}
 
 .slider-ctrl-prev {
     left: 245px;
-    background-image: url(/img/arrow-left.png);
+    background-image: url(../img/arrow-left.png);
 }
 .slider-ctrl-next {
     right: 245px;
-    background-image: url(/img/arrow-right.png);
+    background-image: url(../img/arrow-right.png);
 }
 
 .slides {
@@ -290,7 +290,7 @@ h3::after {
 
 .products-list-button1 {
     width: 50px;
-    background-image: url(/img/button1.png);
+    background-image: url(../img/button1.png);
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -303,7 +303,7 @@ h3::after {
 .products-list-button2 {
     width: 50px;
     background-color: transparent;
-    background-image: url(/img/button2.png);
+    background-image: url(../img/button2.png);
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -317,7 +317,7 @@ h3::after {
 .products-list-button3 {
     width: 50px;
     background-color: transparent;
-    background-image: url(/img/button3.png);
+    background-image: url(../img/button3.png);
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -336,12 +336,11 @@ h3::after {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 2.286;
-    background-image: url(/img/button4.png);
+    background-image: url(../img/button4.png);
     background-repeat: no-repeat;
     background-position: 12px 11px;
     text-align: right;
     padding-right: 17px;
-    padding-top: 10px;
 }
 
 .products-list-button4:hover {
