@@ -29,25 +29,23 @@ a {text-decoration: none;}
 .container {
     width: 1600px;
     margin: 0 auto;
-    line-height: 1;
+    /* line-height: 1; */
 }
 
 
 /*header*/
-.block-header {
+.block-nav {
     padding-top: 43px;
-    margin-bottom: 38px;
+    margin: 0 245px;
 }
 
-.block-nav {
-    padding-left: 245px;
-    padding-right: 245px;
+.nav {
+    margin: 0 0 38px 0;
 }
 
 /*logo*/
 .logo {
     float: left;
-    margin-top: 8px;
 }
 
 
@@ -57,8 +55,8 @@ a {text-decoration: none;}
     font-size: 14px;
     line-height: 1;
     list-style: none;
-    margin-top: 11px;
-    padding: 0px;
+    margin: 3px 0 0 0;
+    padding: 0;
     max-width: 900px;
 }
 
@@ -85,16 +83,20 @@ a {text-decoration: none;}
     margin: auto;
 }
 
+.slider-content {
+    position: absolute;
+}
+
 .slider-overlay {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 600px;
     background-color: rgb(50, 50, 50);
-    opacity: 0;
+    opacity: 0.522;
     z-index: 1;
 }
 
-.slider:hover .slider-overlay {opacity: 0.522;}
+/* .slider:hover .slider-overlay {opacity: 0.522;} */
 
 .slider-ctrl {
     position: absolute;
@@ -128,7 +130,7 @@ a {text-decoration: none;}
 
 .slides-item {position: relative;}
 
-.sldes-img {
+.slides-img {
     height: 600px;
     width: 100%;
     object-fit: cover;

@@ -11,36 +11,48 @@
 </head>
 
 <body>
-    <header class="block-header">
-       <nav class="block-nav container clearfix">
-           <a href="#" class="logo">
-            <img src="./img/logo.png" alt="mart" width="78" height="21">   
-            </a>
-            <ul class="menu clearfix">
-                <li class="menu-li"><a href="#" class="menu-a">Home</a></li>
-                <li class="menu-li"><a href="#" class="menu-a">About Us</a></li>
-                <li class="menu-li"><a href="#" class="menu-a">Page</a></li>
-                <li class="menu-li"><a href="#" class="menu-a">Shop</a></li>
-                <li class="menu-li"><a href="#" class="menu-a">Blog</a></li>
-                <li class="menu-li"><a href="#" class="menu-a">Contact Us</a></li>
-            </ul>
-       </nav>
+
+    <header>
+        <div class="container">
+            <nav class="block-nav clearfix">
+                <div class="nav clearfix">
+                    <a href="#" class="logo">
+                        <img src="./img/logo.png" alt="mart" width="78" height="21">   
+                    </a>
+                    <ul class="menu">
+                        <li class="menu-li"><a href="#" class="menu-a">Home</a></li>
+                        <li class="menu-li"><a href="#" class="menu-a">About Us</a></li>
+                        <li class="menu-li"><a href="#" class="menu-a">Page</a></li>
+                        <li class="menu-li"><a href="#" class="menu-a">Shop</a></li>
+                        <li class="menu-li"><a href="#" class="menu-a">Blog</a></li>
+                        <li class="menu-li"><a href="#" class="menu-a">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main class="block-main container">
+    <main>
+
+        <section class="container">
         <div class="slider">
-            <div class="slider-overlay"></div>
-            <button class="slider-ctrl slider-ctrl-prev"></button>
-            <button class="slider-ctrl slider-ctrl-next"></button>
-            <ul class="slides">
-                <li class="slides-item">
-                    <img class="slides-img" src="./img/slide4.jpg" alt="girls on walk">
-                    <p class="slides-info">AFFORDABLE PARIS TOURS</p>
-                    <p class="slides-tour">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-                </li>
-            </ul>
+            <div class="slider-content">
+                <div class="slider-overlay"></div>
+                <button class="slider-ctrl slider-ctrl-prev"></button>
+                <button class="slider-ctrl slider-ctrl-next"></button>
+                <ul class="slides">
+                    <li class="slides-item">
+                        <img class="slides-img" src="./img/slide4.jpg" alt="girls on walk">
+                        <p class="slides-info">AFFORDABLE PARIS TOURS</p>
+                        <p class="slides-tour">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <section class="products">
+        </section>
+
+        <section class="container">
+            <div class="products">
             <h2>new collection</h2>
             <ul class="products-list clearfix">
                 <li class="products-item clearfix">
@@ -116,10 +128,18 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
-    <footer class="footer">
-        <p class="rights">All Rights Reserved © Dokan | Designed <span class="graf">ThemenGraph</span></p>
-    </footer>
+
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p class="rights">All Rights Reserved © Dokan | Designed <span class="graf">ThemenGraph</span></p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
