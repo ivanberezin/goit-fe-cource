@@ -1,0 +1,345 @@
+/*html*/
+html{box-sizing: border-box;}
+
+*, *::before, *::after {box-sizing: inherit;}
+
+
+/*body*/
+body {
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {text-decoration: none;}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v14-latin-regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v14-latin-900.woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../fonts/roboto-slab-v11-latin-regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSerif';
+    src: url('../fonts/DroidSerif-Italic.woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+.block-header {
+    margin-top: 50px;
+}
+
+.block-nav {
+    margin: 0 230px 110px;
+}
+
+
+/*logo*/
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*navigation*/
+.menu {
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 850px;
+    font-size: 0;
+    text-align: right;
+}
+
+.menu-li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.menu-li:last-child {margin-right: 0;}
+
+.menu-a {
+    display: block;
+    color: rgb(34, 34, 34);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 2.929;
+    font-weight: 400;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: color 0.2s linear;
+}
+
+.menu-li:hover .menu-a {color: rgb(254, 209, 54);}
+.menu-li:focus .menu-a {color: rgb(254, 209, 54);}
+
+
+/*main section services*/
+.services {
+    /* margin-bottom: 98px; */
+    text-align: center;
+}
+
+.services-h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.6666;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.services-h3 {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'DroidSerif', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 74px;
+    padding: 0;
+    overflow-wrap: break-word;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 230px 115px;
+    padding: 0;
+}
+
+.services-item {
+    /* width: 290px; */
+    flex: 0 0 290px;
+    margin-bottom: 98px;
+    text-align: center;
+}
+
+.services-item::before {
+    content: '';
+    display: block;
+    height: 73px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 19px auto;
+}
+
+.icon-basket::before {background-image: url('../img/Icon-Basket.png');}
+.icon-laptop::before {background-image: url('../img/Icon-Laptop.png');}
+.icon-locked::before {background-image: url('../img/Icon-Locked.png');}
+
+
+.services-item-h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+.services-item-p {
+    font-size: 14px;
+    font-family: "RobotoSlab", sans-serif;
+    color: rgb(119, 119, 119);
+    line-height: 2;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.services-list .services-item:nth-last-child(-n+3) {margin-bottom: 0;}
+
+
+/* main section contact */
+.contact {
+    padding-top: 98px;
+    padding-bottom: 114px;
+    text-align: center;
+    background-color: black;
+    background-image: url(../img/Map.png);
+    background-repeat: no-repeat;
+    background-position: right 120px;
+}
+
+.contact-h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.contact-h3 {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.8;
+    font-style: italic;
+    font-family: 'DroidSerif', sans-serif;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 72px;
+    padding: 0px;
+    overflow-wrap: break-word;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.form-enter {
+    margin-bottom: 30px;
+}
+
+.contact-form-ul {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 28px;
+}
+
+.contact-form-ul li {
+    margin-bottom: 28px;
+}
+
+.contact-form-ul li:last-child {margin-bottom: 0;}
+
+.contact-form-ul input {
+    display: block;
+    width: 457px;
+    height: 52px;
+    padding: 0 0 0 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(187, 187, 187);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.contact-form-ul input[name='name']:valid,
+.contact-form-ul input[name='email']:valid {outline: 2px solid green;}
+
+.contact-form-ul input[name='name']:invalid,
+.contact-form-ul input[name='email']:invalid {outline: 2px solid red;}
+
+textarea {resize: none;}
+
+.form-enter [name='massage']:valid {outline: 2px solid green;}
+.form-enter [name='massage']:invalid {outline: 2px solid red;}
+
+.contact-form textarea {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 5px;
+    width: 457px;
+    height: 211px;
+    padding: 20px;
+    resize: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.contact-form button {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 240px;
+    height: 66px;
+    background-color: rgb(254, 209, 54);
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type=’checkbox’].visually-hidden,
+input[type=’radio’].visually-hidden {
+		position: absolute;
+        width: 1px;
+        height: 1px;
+		margin: -1px;
+        border: 0;
+        padding: 0;
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+}
+
+

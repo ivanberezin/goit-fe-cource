@@ -26,8 +26,9 @@ a {text-decoration: none;}
 
 /*header*/
 .menu {
-    padding-top: 76px;
-    padding-bottom: 1px;
+    /* padding-top: 76px; */
+    /* padding-bottom: 1px; */
+    margin: 76px 0 104px 0;
 }
 
 /*navigation*/
@@ -35,7 +36,7 @@ a {text-decoration: none;}
     list-style: none;
     text-align: center;
     padding: 0;
-    margin: 0 0 104px 0;
+    margin: 0;
 }
 
 .site-navigation-li {
