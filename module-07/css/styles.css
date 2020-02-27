@@ -61,7 +61,7 @@ a {text-decoration: none;}
 
 /*header*/
 .block-header {
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .block-nav {
@@ -113,7 +113,6 @@ a {text-decoration: none;}
 
 /*main section services*/
 .services {
-    /* margin-bottom: 98px; */
     text-align: center;
 }
 
@@ -137,7 +136,6 @@ a {text-decoration: none;}
     font-style: italic;
     font-weight: 400;
     color: rgb(119, 119, 119);
-    text-align: center;
     margin: 0;
     margin-bottom: 74px;
     padding: 0;
@@ -202,11 +200,15 @@ a {text-decoration: none;}
 
 
 /* main section contact */
+
+.background {
+    background-color: black;
+}
+
 .contact {
     padding-top: 98px;
     padding-bottom: 114px;
     text-align: center;
-    background-color: black;
     background-image: url(../img/Map.png);
     background-repeat: no-repeat;
     background-position: right 120px;
@@ -232,18 +234,15 @@ a {text-decoration: none;}
     font-family: 'DroidSerif', sans-serif;
     font-weight: 400;
     color: rgb(119, 119, 119);
-    text-align: center;
     margin: 0px;
     margin-bottom: 72px;
     padding: 0px;
     overflow-wrap: break-word;
 }
 
-.contact-form {
-    text-align: center;
-}
-
 .form-enter {
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -262,15 +261,17 @@ a {text-decoration: none;}
 
 .contact-form-ul li:last-child {margin-bottom: 0;}
 
-.contact-form-ul input {
+.contact-input,
+.contact-textarea {
+    box-sizing: border-box;
     display: block;
-    width: 457px;
-    height: 52px;
-    padding: 0 0 0 20px;
+    width: 455px;
+    outline: 4px solid transparent;
+    outline-offset: -2px;
+    transition: outline-color 0.1s;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204, 204, 204);
-    border-radius: 2px;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     color: rgb(187, 187, 187);
@@ -279,33 +280,33 @@ a {text-decoration: none;}
     line-height: 1.2;
 }
 
-.contact-form-ul input[name='name']:valid,
-.contact-form-ul input[name='email']:valid {outline: 2px solid green;}
+.contact-input {
+    height: 52px;
+    border-radius: 2px;
+    padding: 0 20px;
+}
 
-.contact-form-ul input[name='name']:invalid,
-.contact-form-ul input[name='email']:invalid {outline: 2px solid red;}
+.contact-textarea {
+    height: 211px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.contact-input[name='name']:focus:valid,
+.contact-input[name='email']:focus:valid,
+.contact-textarea[name='massage']:focus:valid {
+    outline-color: green;
+    transition: outline-color 0.4s;
+}
+
+.contact-input[name='name']:focus:invalid,
+.contact-input[name='email']:focus:invalid,
+.contact-textarea[name='massage']:focus:invalid {
+    outline-color: red;
+    transition: outline-color 5s;
+}
 
 textarea {resize: none;}
-
-.form-enter [name='massage']:valid {outline: 2px solid green;}
-.form-enter [name='massage']:invalid {outline: 2px solid red;}
-
-.contact-form textarea {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(204, 204, 204);
-    border-radius: 5px;
-    width: 457px;
-    height: 211px;
-    padding: 20px;
-    resize: none;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(187, 187, 187);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
 
 .contact-form button {
     display: block;

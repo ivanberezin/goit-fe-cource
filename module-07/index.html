@@ -53,20 +53,22 @@
         </section>
 
         <section>
-            <div class="contact container">
-                <h2 class="contact-h2">Contact Us</h2>
-                <h3 class="contact-h3">Proin iaculis purus consequat sem cure.</h3>
-                <form action="#" class="contact-form">
-                    <div class="form-enter">
-                        <ul class="contact-form-ul">
-                            <li><input type="text" name="name" placeholder="your name *" required autocomplete="off"></li>
-                            <li><input type="email" name="email" placeholder="your e-mail *" required autocomplete="off"></li>
-                            <li><input type="text" name="subject" placeholder="subject"></li>
-                        </ul>
-                        <textarea name="massage" placeholder="your message *" cols="30" rows="10" required></textarea>
-                    </div>
-                    <button>send message</button>
-                </form>
+            <div class="background">
+                <div class="contact container">
+                    <h2 class="contact-h2">Contact Us</h2>
+                    <h3 class="contact-h3">Proin iaculis purus consequat sem cure.</h3>
+                    <form action="#" class="contact-form" method="POST">
+                        <div class="form-enter">
+                            <ul class="contact-form-ul">
+                                <li><input class="contact-input" type="text" name="name" placeholder="your name *" required autocomplete="off"></li>
+                                <li><input class="contact-input" type="email" name="email" placeholder="your e-mail *" required autocomplete="off"></li>
+                                <li><input class="contact-input" type="text" name="subject" placeholder="subject"></li>
+                            </ul>
+                            <textarea class="contact-textarea" name="massage" placeholder="your message *" cols="30" rows="10" required></textarea>
+                        </div>
+                        <button type="submit">send message</button>
+                    </form>
+                </div>
             </div>
         </section>
 
