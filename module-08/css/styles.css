@@ -24,15 +24,17 @@ a {text-decoration: none;}
     margin: 0 auto;
 }
 
-.background {background-color: black;}
-
 /* ------------------------------------------------  HEADER  --------------- */
 
-.header {
+.header-wrp{
+    min-height: 540px;
     background-image: url('../img/bgr-320.png');
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
+}
+
+.header {
     text-align: center;
     padding-top: 20px;
 }
@@ -108,25 +110,35 @@ a {text-decoration: none;}
     font-family: "Roboto", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 300;
+    margin: 0 50px 18px;
 }
 
-.header-button {
+.btn {
     display: inline-block;
-    font-family: "Montserrat",sans-serif;
-    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 78, 80);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
     font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 78, 80);
     font-weight: 700;
     line-height: 1.2;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(255, 78, 80);
-    min-height: 40px;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(255, 78, 80);
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.header-btn {
+    min-height: 40px;
     padding: 0 50px;
     margin-bottom: 138px;
 }
-
-.header-button:hover {box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);}
 
 /* ---------------------------------------------  PARTNER  -------------- */
 
@@ -206,29 +218,15 @@ a {text-decoration: none;}
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: rgb(102, 102, 102);
+    margin: 0 52px;
 }
 
-
-.partner-button {
-    display: inline-block;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 78, 80);
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
+.partner-btn {
     min-height: 44px;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 78, 80);
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-    cursor: pointer;
     padding: 0 72px;
     margin-bottom: 56px;
 }
 
-.partner-button:hover {box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);}
 
 
 
