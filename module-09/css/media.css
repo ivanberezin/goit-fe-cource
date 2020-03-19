@@ -1,0 +1,114 @@
+/* -------------------------------------- 768 >>>  ------------------------ */
+
+@media (min-width: 768px) {
+
+    .container-fluid {
+        background-image: url('../img/bgr-768.png');
+        padding-top: 48px;
+    }
+
+    .container {max-width: 748px;}
+
+    .container-fluid {
+        min-height: 700px;
+    }
+    
+    .wrap-menu {margin: 0 0 156px;}
+
+    .menu {
+        margin-bottom: 0;
+        max-width: 450px;
+    }
+
+    .header-h2 {font-size: 52px;}
+
+    .header-h3 {
+        font-size: 24px;
+        margin-bottom: 38px;
+    }
+
+    .header-button {
+        padding: 0 24px;
+        margin-bottom: 234px;
+    }
+
+    .card-row {
+        align-content: center;
+        margin-bottom: 38px;
+        max-height: 500px;
+        overflow: hidden;
+    }
+
+    .partner-button {
+        padding: 0 30px;
+    }
+
+}
+
+/* ---------------------------------------  >>> 768 - 939 <<<  ------------ */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .header-h2 {
+        margin: 0 65px 40px;
+    }
+
+    .partner-wrp {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .partner-h2 {margin-bottom: 34px;}
+
+    .card {
+        padding: 0;
+        margin: 0 20px 58px 0;
+    }
+
+    .card:nth-child(even) {margin-bottom: 0;}
+    .card:nth-last-child(-n+2) {margin-right: 0;}
+
+    .icon {right: 70px;}
+
+    .partner-info {
+        margin: 0 10px;
+    }
+
+    .partner-button {
+        margin-bottom: 40px;
+    }
+
+}
+
+/* ----------------------------------  940 >>> ------------------------ */
+
+@media (min-width: 992px) {
+
+    .container {max-width: 940px;}
+
+    .container-fluid {
+        background-image: url('../img/bgr-1440.png');
+        padding-top: 38px;
+    }
+
+    .wrap-menu {margin: 0 20px 154px 0;}
+
+    /* .menu {margin-bottom: 0;} */
+
+    .header-h2 {
+        margin: 0 160px 40px;
+    }
+
+    .partner-h2 {margin-bottom: 38px;}
+
+    .card {padding: 0 15px;}
+
+    .icon {right: 50px;}
+
+    .card:last-child {margin-right: 0;}
+    .card:nth-last-child(-n+4) {margin-bottom: 0;}
+
+    .partner-info {margin: 0 2px;}
+
+    .partner-button {margin-bottom: 72px;}
+}
