@@ -2,24 +2,13 @@
 
 @media (min-width: 748px) {
 
-    .partner-li {
-        margin-bottom: 58px;
-        margin-right: 20px;
-    }
-    
-}
-
-/* ---------------------------------------  >>> 768 - 939 <<<  ------------ */
-
-@media (min-width: 748px) and (max-width: 939px) {
-
-    .container {max-width: 748px;}
-
     .header-wrp {
         background-image: url('../img/bgr-768.png');
         padding-top: 48px;
         min-height: 700px;
     }
+
+    .container {max-width: 748px;}
 
     .wrap-menu {
         display: flex;
@@ -44,7 +33,7 @@
         margin-bottom: 38px;
     }
 
-    .header-button {
+    .header-btn {
         padding: 0 24px;
         margin-bottom: 234px;
     }
@@ -55,31 +44,41 @@
 
     .partner-ul {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
         margin-bottom: 38px;
-        max-height: 510px;
         overflow: hidden;
     }
 
+    .partner-li {
+        max-width: 236px;
+        margin-bottom: 58px;
+        margin-right: 20px;
+    }
+    
     .partner-li:nth-child(even) {margin-bottom: 0;}
     .partner-li:nth-last-child(-n+2) {margin-right: 0;}
 
-    .partner-li {
-        max-width: 236px;
-    }
-
     .icon {right: 58px;}
-
 
     .partner-info {
         margin: 0 10px;
     }
 
-    .partner-button {
+    .partner-btn {
         margin-bottom: 40px;
         padding: 0 30px;
+    }
+
+}
+
+/* ---------------------------------------  >>> 768 - 939 <<<  ------------ */
+
+@media (min-width: 748px) and (max-width: 939px) {
+
+    .partner-ul {
+        flex-wrap: wrap;
+        max-height: 520px;
     }
 
 }
@@ -88,25 +87,16 @@
 
 @media (min-width: 940px) {
 
-    .container {max-width: 940px;
-        /* margin-right: -18px; */
-    }
+    .container {max-width: 940px;}
 
     .header-wrp {
         background-image: url('../img/bgr-1440.png');
         padding-top: 38px;
-        /* min-height: 510px; */
     }
 
     .wrap-menu {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
         margin: 0 20px 154px 0;
     }
-
-    .menu {margin-bottom: 0;}
 
     .header-h2 {
         margin: 0 160px 40px;
@@ -115,7 +105,6 @@
     .partner-h2 {margin-bottom: 38px;}
 
     .partner-ul {
-        display: flex;
         flex-direction: row;
         justify-content: start;
         margin: 0 0 40px 0;
@@ -128,14 +117,12 @@
     .three {order: 2;}
     .four {order: 4;}
 
-    .partner-li {
-        max-width: 220px;
-    }
+    .partner-li {max-width: 220px;}
 
     .partner-li:last-child {margin-right: 0;}
     .partner-li:nth-last-child(-n+4) {margin-bottom: 0;}
 
     .partner-info {margin: 0 2px;}
 
-    .partner-button {margin-bottom: 72px;}
+    .partner-btn {margin-bottom: 72px;}
 }
