@@ -95,7 +95,7 @@ img {
 
 .menu__item {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     position: relative;
     margin-right: 58px;
     font-size: 14px;
@@ -104,23 +104,28 @@ img {
 .menu__item:last-child {margin-right: 0;}
 
 .menu__link {
+    display: block;
     color: rgb(255, 225, 255);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+    padding-bottom: 6px; /*for normal hover*/
     overflow: hidden;
     -webkit-transition: color 0.2s linear;
     -o-transition: color 0.2s linear;
     transition: color 0.2s linear;
 }
 
-.menu__item:hover .menu__link {color: rgb(252, 227, 138);}
-.menu__item:focus .menu__link {color: rgb(252, 227, 138);}
+/* .menu__item:hover .menu__link {color: rgb(252, 227, 138);} */
+/* .menu__item:focus .menu__link {color: rgb(252, 227, 138);} */
+
+.menu__link:hover {color: rgb(252, 227, 138);}
+.menu__link:focus {color: rgb(252, 227, 138);}
 
 .menu__link::after {
     position: absolute;
     content: '';
-    display:block;
+    display: block;
     background-color: rgb(252, 227, 138);
     width: 50px;
     height: 3px;
@@ -135,8 +140,8 @@ img {
     transition: opacity 0.2s linear;
 }
 
-.menu__item:hover .menu__link::after {opacity: 1;}
-.menu__item:focus .menu__link::after {opacity: 1;}
+.menu__link:hover::after {opacity: 1;}
+.menu__link:focus::after {opacity: 1;}
 
 .menu__svg {fill: rgb(255, 225, 255)}
 .menu__item:hover .menu__svg {fill: rgb(252, 227, 138)}
