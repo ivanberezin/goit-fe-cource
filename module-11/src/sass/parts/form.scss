@@ -1,0 +1,41 @@
+.page-footer__subscribe {
+    @include flex;
+
+    input[type="email"] {
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(231, 231, 231);
+        color: rgb(204, 204, 204);
+        width: 234px;
+        height: 40px;
+        font-family: $secondary-font;
+        font-weight: $text-light;
+        font-style: italic;
+        font-size: $secondary-text-size;
+        line-height: $secondary-text-height;
+        text-align: left;
+        margin: 0;
+        padding: 0 0 0 12px;
+        overflow: hidden;
+    }
+
+    input[type="submit"] {
+        @extend %button;
+        background-color: $bgr-blue-color;
+        width: 150px;
+        height: 40px;
+        border-style: none;
+        font-family: $primary-font;
+        color: $text-color-white;
+        font-size: $primary-text-size;
+        line-height: $primary-text-height;
+        font-weight: $text-bold;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    
+        &:hover, &:focus {
+            background-color: $secondary-hover-color;
+        }
+    }
+}

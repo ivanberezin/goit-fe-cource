@@ -1,0 +1,23 @@
+%button {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+%bgr-position {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+%link {
+    display: block;
+    text-decoration: none;
+}
+
+%list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

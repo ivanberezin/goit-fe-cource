@@ -1,0 +1,52 @@
+.services {
+    padding-top: 54px;
+    margin-bottom: 98px;
+
+    .services__intro {margin-bottom: 108px;}
+
+&__item {
+    position: relative;
+    width: 381px;
+    margin-bottom: 98px;
+    text-align: left;
+    padding-left: 80px;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 32px;
+        background-repeat: no-repeat;
+    }
+}
+
+&__icon--clock::before {background-image: url('../images/svg/ALARM.svg');}
+&__icon--line::before {background-image: url('../images/svg/LINE.svg');}
+&__icon--pc::before {background-image: url('../images/svg/COMPUTER.svg');}
+&__icon--book::before {background-image: url('../images/svg/BOOK.svg');}
+&__icon--home::before {background-image: url('../images/svg/HOME.svg');}
+&__icon--digital::before {background-image: url('../images/svg/DIGITAL.svg');}
+
+&__item-info {
+    font-family: $primary-font;
+    font-weight: $text-regular;
+    color: $text-color-dark;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
+&__item-text {
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: $secondary-font;
+    color: $text-color-gray;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+}

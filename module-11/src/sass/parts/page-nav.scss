@@ -1,0 +1,6 @@
+.page-nav {
+    @include flex (space-between, baseline);
+    margin-bottom: 196px;
+
+    &__menu {max-width: 1090px;}
+}

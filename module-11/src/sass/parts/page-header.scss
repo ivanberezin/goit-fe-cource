@@ -1,0 +1,27 @@
+.page-header {
+    padding-top: 30px;
+    margin-bottom: 134px;
+    text-align: center;
+
+    &__info {
+        font-family: $tertiary-font;
+        font-weight: $text-regular;
+        font-size: 72px;
+        color: $text-color-white;
+        overflow-wrap: break-word;
+        margin: 0;
+        margin-bottom: 54px;
+    }
+    
+    &__slogan {
+        font-size: 150px;
+        line-height: 0.933;
+        font-family: $primary-font;
+        color: $text-color-white;
+        font-weight: $text-bold;
+        text-transform: uppercase;
+        margin: 0 50px 120px;
+        padding: 0;
+        overflow-wrap: break-word;
+    }
+}

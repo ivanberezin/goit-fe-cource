@@ -1,0 +1,54 @@
+.menu {
+    @extend %list;
+    display: inline-block;
+    font-size: 0;
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        margin-right: 58px;
+        font-size: 14px;
+    
+        &:last-child {margin-right: 0;}
+    
+        &:hover .menu__svg,
+        &:focus .menu__svg {fill: $primary-hover-color;}
+    }
+
+    a {@extend %link;}
+
+    &__link {
+        @extend %link;
+        display: block;
+        color: $text-color-white;
+        font-family: $primary-font;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+        overflow: hidden;
+        transition: color 0.2s linear;
+    
+        &:hover, &:focus {color: $primary-hover-color;}
+    
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            background-color: $primary-hover-color;
+            width: 50px;
+            height: 3px;
+            left: 50%;
+            top: 22px;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.2s linear;
+        }
+    
+        &:hover::after, &:focus::after {opacity: 1;}
+    }
+
+    &__svg {fill: $text-color-white;}
+}
+
+
+

@@ -1,0 +1,24 @@
+.page-footer {
+    @include flex (space-between);
+    position: relative;
+    text-align: left;
+    padding-top: 12px;
+    margin-bottom: 12px;
+    border-top: 1px solid rgb(229, 229, 229);
+
+    &__rights {
+        font-size: $primary-text-size;
+        line-height: $primary-text-height;
+        font-family: $primary-font;
+        color: $text-color-dark;
+        margin: 0;
+        padding: 0;
+        max-width: 810px;
+        overflow-wrap: break-word;
+    
+        &--color {color: $secondary-hover-color;}
+    }
+}
+
+
+
